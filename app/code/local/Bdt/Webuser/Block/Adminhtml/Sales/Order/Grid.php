@@ -23,9 +23,12 @@ class Bdt_Webuser_Block_Adminhtml_Sales_Order_Grid extends Mage_Adminhtml_Block_
         if(Mage::helper('webuser')->getLoggedUserRole()){
             $storeIds = implode(',', Mage::helper('webuser')->getLoggedUserRole());
             $collection->getSelect()->where("main_table.store_id in($storeIds)");
-        }
 
+        }else{
+            $collection->getSelect()->where("main_table.store_id < 0");
+        }
         return parent::_prepareCollection();
+
     }
 
     protected function _prepareColumns()
