@@ -1,7 +1,6 @@
-# Bdt_Webuser
-This extension is useful for multi-website portal.  
+This extension is useful for multi-website portal.
 
-It help to display only applicable website's orders for those adimin users.
+It help to display only applicable website's  orders for those adimin users.
 
 Note: Website name and role name should be same. So All user under those role can see only it's website orders.
 

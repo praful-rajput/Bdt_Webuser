@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Bdt_Webuser>
+            <version>1.1</version>
+        </Bdt_Webuser>
+    </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <barcode before="Mage_Adminhtml">Bdt_Webuser_Adminhtml</barcode>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <global>
+        <helpers>
+            <barcode>
+                <class>Bdt_Webuser_Helper</class>
+            </barcode>
+        </helpers>
+        <blocks>
+            <barcode>
+                <class>Bdt_Webuser_Block</class>
+            </barcode>
+            <adminhtml>
+            <rewrite>
+                <sales_order_grid>Bdt_Webuser_Block_Adminhtml_Sales_Order_Grid</sales_order_grid>
+            </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+</config>
