@@ -17,3 +17,5 @@ Step 2: Add New User
 		Set the account status to Active to enable access to the user.
 		Click the User Role tab on the left panel and assign this user to a predefined role.
 		Click Save User.
+		
+Git Test		
